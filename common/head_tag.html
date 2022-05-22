@@ -1,0 +1,15 @@
+<script type="text/discourse-plugin" version="0.8">
+  const h = require("virtual-dom").h;
+
+  api.createWidget("background-image", {
+    tagName: "div.background-image",
+
+    html() {
+      return null;
+    }
+  });
+</script>
+
+<script type="text/x-handlebars" data-template-name="/connectors/below-site-header/inject-widget">
+  {{mount-widget widget="background-image"}}
+</script>

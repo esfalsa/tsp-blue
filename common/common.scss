@@ -1,0 +1,66 @@
+// Load Semplicita
+@font-face {
+  font-family: Semplicita;
+  src: url($Semplicita-Medium) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Semplicita;
+  src: url($Semplicita-MediumItalic) format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Semplicita;
+  src: url($Semplicita-Bold) format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Semplicita;
+  src: url($Semplicita-BoldItalic) format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+:root {
+    --font-family: Semplicita, sans-serif;
+    --heading-font-family: Semplicita, sans-serif;
+}
+
+
+.topic-list .main-link.focused {
+    box-shadow: inset 3px 0 0 var(--quaternary);
+}
+
+.nav-pills>li>a,
+.select-kit .select-kit-header {
+    text-transform: uppercase;
+}
+
+#topic-title {
+    background: var(--tertiary);
+    padding: 1em;
+    
+    h1 a {
+        color: var(--secondary);
+    }
+}
+
+.badge-wrapper.bullet span.badge-category {
+    color: var(--quaternary);
+}
+
+.timeline-container .topic-timeline {
+    .timeline-handle {
+        background-color: var(--tertiary-medium);
+    }
+
+    .timeline-scrollarea {
+        border-left-color: var(--tertiary-medium);
+    }
+}

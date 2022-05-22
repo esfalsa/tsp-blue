@@ -1,0 +1,34 @@
+{
+  "name": "TSP Blue",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+    "background": "assets/background.jpg",
+    "Semplicita-Bold": "assets/Semplicita-Bold.woff2",
+    "Semplicita-BoldItalic": "assets/Semplicita-BoldItalic.woff2",
+    "Semplicita-Medium": "assets/Semplicita-Medium.woff2",
+    "Semplicita-MediumItalic": "assets/Semplicita-MediumItalic.woff2"
+  },
+  "color_schemes": {
+    "Light": {
+      "primary": "005080",
+      "secondary": "ffffff",
+      "tertiary": "019aed",
+      "quaternary": "ff9900",
+      "header_background": "ffffff",
+      "header_primary": "005080",
+      "highlight": "ff9900",
+      "danger": "e45735",
+      "success": "009900",
+      "love": "fa6c8d"
+    }
+  },
+  "modifiers": {
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}
