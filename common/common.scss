@@ -28,13 +28,18 @@
 }
 
 :root {
-    --font-family: Semplicita, sans-serif;
-    --heading-font-family: Semplicita, sans-serif;
+    --font-family: #{$body-font-family};
+    --heading-font-family: #{$heading-font-family};
 }
 
 
 .topic-list .main-link.focused {
     box-shadow: inset 3px 0 0 var(--quaternary);
+}
+
+// NAVIGATION
+.nav-pills, .navigation-container {
+    font-family: var(--heading-font-family);
 }
 
 .nav-pills>li>a,
@@ -63,4 +68,61 @@
     .timeline-scrollarea {
         border-left-color: var(--tertiary-medium);
     }
+}
+
+// CUSTOM MARKDOWN
+div.markdown-block {
+    background-color:#EBEBEB;
+    border:1px solid #B4B4B4;
+    padding:8px;
+}
+
+div.markdown-bill {
+    padding:8px;
+}
+
+span.markdown-bill-add {
+    color:#2ECC71;
+}
+
+span.markdown-bill-remove {
+    color:#E74C3C;
+	text-decoration: line-through;
+}
+
+// ALERT STYLING
+.alert.alert-global-notice {
+    margin-bottom: 2em;
+}
+
+// USER PAGE
+.user-main {
+    .about.collapsed-info .details {
+        background: transparent;
+    }
+
+    .about .details {
+        background: transparent;
+    }
+}
+
+.user-content {
+    background: transparent;
+}
+
+// POSTS
+.topic-category .badge-wrapper {
+    background: rgba($secondary, 0.8);
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+// TABLES
+table th {
+    color: $primary-very-high;
+}
+
+// EDITOR
+.d-editor-input {
+    font-family: #{$editor-font-family};
 }
