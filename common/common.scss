@@ -1,30 +1,30 @@
 // Load Semplicita
 @font-face {
-  font-family: Semplicita;
-  src: url($Semplicita-Medium) format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    font-family: Semplicita;
+    src: url($Semplicita-Medium) format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Semplicita;
-  src: url($Semplicita-MediumItalic) format('woff2');
-  font-weight: normal;
-  font-style: italic;
+    font-family: Semplicita;
+    src: url($Semplicita-MediumItalic) format('woff2');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: Semplicita;
-  src: url($Semplicita-Bold) format('woff2');
-  font-weight: bold;
-  font-style: normal;
+    font-family: Semplicita;
+    src: url($Semplicita-Bold) format('woff2');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Semplicita;
-  src: url($Semplicita-BoldItalic) format('woff2');
-  font-weight: bold;
-  font-style: italic;
+    font-family: Semplicita;
+    src: url($Semplicita-BoldItalic) format('woff2');
+    font-weight: bold;
+    font-style: italic;
 }
 
 :root {
@@ -38,7 +38,8 @@
 }
 
 // NAVIGATION
-.nav-pills, .navigation-container {
+.nav-pills,
+.navigation-container {
     font-family: var(--heading-font-family);
 }
 
@@ -50,7 +51,7 @@
 #topic-title {
     background: var(--tertiary);
     padding: 1em;
-    
+
     h1 a {
         color: var(--secondary);
     }
@@ -72,22 +73,22 @@
 
 // CUSTOM MARKDOWN
 div.markdown-block {
-    background-color:#EBEBEB;
-    border:1px solid #B4B4B4;
-    padding:8px;
+    background-color: #EBEBEB;
+    border: 1px solid #B4B4B4;
+    padding: 8px;
 }
 
 div.markdown-bill {
-    padding:8px;
+    padding: 8px;
 }
 
 span.markdown-bill-add {
-    color:#2ECC71;
+    color: #2ECC71;
 }
 
 span.markdown-bill-remove {
-    color:#E74C3C;
-	text-decoration: line-through;
+    color: #E74C3C;
+    text-decoration: line-through;
 }
 
 // ALERT STYLING
@@ -119,10 +120,44 @@ span.markdown-bill-remove {
 
 // TABLES
 table th {
-    color: $primary-very-high;
+    color: var(--primary-very-hgih);
 }
 
 // EDITOR
 .d-editor-input {
     font-family: #{$editor-font-family};
+}
+
+// BUTTONS
+.btn-flat .d-icon {
+    color: var(--primary-high);
+}
+
+// TOPIC LIST
+.topic-list-icons {
+    .d-icon-thumbtack {
+        color: var(--quaternary);
+    }
+
+    .d-icon-thumbtack.unpinned {
+        color: var(--quaternary);
+    }
+
+    .d-icon-bookmark {
+        color: var(--quaternary);
+    }
+}
+
+.topic-list {
+    @extend .topic-list-icons;
+}
+
+.topic-statuses {
+    .topic-status {
+        color: $quaternary;
+    }
+
+    .topic-status-warning .d-icon-envelope {
+        color: $danger;
+    }
 }

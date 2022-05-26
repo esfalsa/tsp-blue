@@ -8,7 +8,7 @@ div.background-image {
 }
 
 #main-outlet {
-    background: rgba($secondary, 0.8);
+    background: #{'rgba(var(--secondary), 0.8)'};
     padding: 1em;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
