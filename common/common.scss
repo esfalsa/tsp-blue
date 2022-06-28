@@ -30,6 +30,10 @@
 :root {
     --font-family: #{$body-font-family};
     --heading-font-family: #{$heading-font-family};
+    --primary-rgb: #{hexToRGB($primary)};
+    --secondary-rgb: #{hexToRGB($secondary)};
+    --tertiary-rgb: #{hexToRGB($tertiary)};
+    --quaternary-rgb: #{hexToRGB($quaternary)};
 }
 
 
@@ -159,5 +163,19 @@ table th {
 
     .topic-status-warning .d-icon-envelope {
         color: $danger;
+    }
+}
+
+// .topic-list-body {
+//     background: $secondary;
+// }
+
+.category-list {
+    tbody {
+        background: $secondary;
+    }
+
+    thead tr th {
+        color: $primary;
     }
 }

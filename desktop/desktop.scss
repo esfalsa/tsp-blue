@@ -8,7 +8,7 @@ div.background-image {
 }
 
 #main-outlet {
-    background: #{'rgba(var(--secondary), 0.8)'};
+    background: rgba(var(--secondary-rgb), 0.8);
     padding: 1em;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
@@ -23,4 +23,9 @@ div.background-image {
     margin: -1em;
     margin-bottom: 0;
     border-radius: 0.5em 0.5em 0 0;
+}
+
+.category-boxes .category-box-inner,
+.category-boxes-with-topics .category-box-inner {
+    background: $primary-low;
 }
